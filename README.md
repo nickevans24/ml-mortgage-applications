@@ -13,7 +13,8 @@ The dataset is avaiable on [Kaggle](https://www.kaggle.com/datasets/jboysen/ny-h
 The data primarily consists of categorical features that relate to the profile of the application, such as gender, race, and county as well as features that categorise the loan, such as loan type, loan purpose, and property type. Examples of continuous features include the loan amount, applicant income, and the median family income of the county the property resides in. 
 
 # Data Preparation
-The initial stage of data preparation was to find the correlation of features to the target variable, removing those that had a low correlation coeeficients (association scores for categorical features) to reduce the chance of overfitting in the model. After this, all categorical features were encoded using one-hot encoding. Cross validation tests were also used to investigate whether log transformations and scaling of skewed features improved the cross validation score of the model, but as there was no benefit they were not required for preprocessing.  
+The initial stage of data preparation was to find the correlation of features to the target variable, removing those that had a low correlation coeeficients (association scores for categorical features) to reduce the chance of overfitting in the model. After this, all categorical features were encoded using one-hot encoding. Cross validation tests were also used to investigate whether log transformations and scaling of skewed features improved the cross validation score of the model, but as there was no benefit they were not required for preprocessing. 
+
 The stages of data preparation were then made into a preprocessing pipeline, ensuring that preprocessing stage is easily replicable.
 
 # Model
